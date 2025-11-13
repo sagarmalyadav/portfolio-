@@ -1,0 +1,365 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f9f9f9, #eaf4ff);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+  transform: scale(1.1);
+}
+
+/* ===== About Section ===== */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(120deg, #fff, #e0f7fa);
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Certificates ===== */
+.certificate {
+  background: #f0faff;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.certificate h2 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.certificate-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.certificate-item {
+  position: relative;
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.certificate-item:hover img {
+  transform: scale(1.1);
+}
+
+.certificate-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.certificate-item:hover .overlay {
+  opacity: 1;
+}
+
+/* ===== Education ===== */
+.education {
+  padding: 70px 10%;
+  background: linear-gradient(120deg, #e0f7fa, #fff);
+}
+
+.education h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.education ul li {
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.education ul li:hover {
+  transform: translateX(10px);
+}
+
+/* ===== Skills ===== */
+.skills {
+  background: #f9f9f9;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills li {
+  background: linear-gradient(135deg, #00bcd4, #0091ea);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.skills li:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #0091ea, #007bff);
+}
+
+/* ===== Portfolio ===== */
+.portfolio {
+  background: linear-gradient(120deg, #fff, #e3f2fd);
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 91, 255, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* ===== Experience ===== */
+.experience {
+  background: #f0faff;
+  padding: 70px 10%;
+}
+
+.experience h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.experience ul li {
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 15px;
+  border-left: 5px solid #00bcd4;
+  border-radius: 8px;
+}
+
+/* ===== Contact ===== */
+.contact {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: white;
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact button {
+  background: #ffeb3b;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ffeb3b;
+}
